@@ -1,4 +1,19 @@
 ;(function () {
+
+	
+	var language; 
+	function getLanguage() {
+		(localStorage.getItem('language') == null) ? setLanguage('cs') : false;
+		$.ajax({ 
+			url:  localStorage.getItem('language') + '.json', 
+			dataType: 'jsonp', async: false, dataType: 'jsonp', 
+			success: function (lang) { language = lang } });
+	}
+
+	function setLanguage(lang) {
+		localStorage.setItem('language', lang);
+	}
+getLanguage();
 	
 	'use strict';
 

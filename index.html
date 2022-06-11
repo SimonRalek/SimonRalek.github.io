@@ -38,7 +38,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<div class="display-t js-fullheight">
+						<div class="display-t js-fullheight"><a href="#" onclick="setLanguage('cs')"><img src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png" height="25px" alt=""></a>
+							<a href="#" onclick="setLanguage('en')"><img src="https://files.softicons.com/download/internet-cons/flag-icons-by-custom-icon-design/png/256/United-Kingdom-Flag.png" height="25px" alt=""></a>
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 								<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
 								<h1>Šimon Rálek</h1>
@@ -126,6 +127,13 @@ společnost užitečným talentem</p>
 
         <!-- Main -->
         <script src="js/main.js"></script>
+
+		<!-- Language -->
+		<script>
+			$(document).ready(() => {
+				$('#about_me').text(localStorage.getItem(language.about_me))
+			})
+		</script>
 
 </body>
 
