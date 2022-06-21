@@ -592,6 +592,7 @@ a .flags {
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
+  color: rgb(220,220,220);
 }
 
 .timeline-body > p + p {
@@ -973,7 +974,9 @@ a .flags {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
+h3.timeline-head {
+  color: black;
+}
 #fh5co-footer {
   padding: 35px 0;
   text-align: center;

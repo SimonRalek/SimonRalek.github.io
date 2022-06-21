@@ -605,7 +605,7 @@ a .flags {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  background-color: rgba(0, 54, 202, 1);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -670,7 +670,7 @@ a .flags {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #bfbfbf;
+  color: #888;
 }
 
 .timeline-body>p,
