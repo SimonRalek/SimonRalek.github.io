@@ -22,8 +22,6 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
-	<!-- Modernizr JS -->
-	
 </head>
 
 <body>
@@ -34,13 +32,15 @@
 		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
 			style="background-image:url(images/cover_bg.jpg);" loading="lazy" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
-			<nav class="navbar navbar-light bg-light" style="position:absolute">
-				<a href="/cs/" onclick="setLanguage('cs')"><img
+			<nav class="navbar navbar-light bg-light" style="position:absolute;width: 100%;">
+				<a href="/cs/" onclick="setLanguage('cs')" title="Czech"><img
 						src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png"
-						class="flags" height="32px" alt="cs-flag"></a>
-				<a href="/en/" onclick="setLanguage('en')"><img
+						class="flags" height="36px" alt="cs-flag"></a>
+				<a href="/en/" onclick="setLanguage('en')" title="English"><img
 						src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
-						class="flags" height="32px" alt="en-flag"></a>
+						class="flags" height="36px" alt="en-flag"></a>
+				<a href="" title="Switch Theme"><img src="https://www.iconsdb.com/icons/preview/white/sun-xxl.png" id="switch-theme"
+						alt="theme" height="36px" style="float:right;margin:1rem"></a>
 			</nav>
 			<div class="container">
 				<div class="row">
@@ -114,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 
 		<div class="gototop js-top">
 			<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -134,7 +134,7 @@
 		<script src="js/jquery.easypiechart.min.js"></script>
 		<!-- Modernizer -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
-		
+
 		<!-- Main -->
 		<script src="js/main.js"></script>
 
@@ -144,7 +144,7 @@
 			$(document).ready(() => {
 				$('#about_me').text(localStorage.getItem(language.about_me))
 			})
-			</script>
+		</script>
 
 </body>
 

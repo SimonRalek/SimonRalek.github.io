@@ -1,5 +1,18 @@
 ;(function () {
 
+/* 	const routes = {
+		'/' : cs,
+		'/en' : en
+	}
+
+	const onNavigate = (pathName) => {
+		window.history.pushState(
+			{},
+			pathName,
+			window.location.origin + pathName
+		)
+		rootDiv.innerHtml = routes[pathName]
+	} */
 	
 	var language; 
 	function getLanguage() {
