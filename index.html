@@ -20,7 +20,8 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link id="theme-light" rel="stylesheet" title="light" href="css/style.css">
+	<link id="theme-dark" rel="stylesheet" title="dark" href="css/dark-style.css" disabled>
 
 </head>
 
@@ -39,8 +40,9 @@
 				<a href="/en/" onclick="setLanguage('en')" title="English"><img
 						src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
 						class="flags" height="36px" alt="en-flag"></a>
-				<a href="" title="Switch Theme"><img src="https://www.iconsdb.com/icons/preview/white/sun-xxl.png" id="switch-theme"
-						alt="theme" height="36px" style="float:right;margin:1rem"></a>
+				<button id="toggleTheme" onclick="switch_style()" title="Switch Theme" style="float:right;"><img
+						src="https://www.iconsdb.com/icons/preview/white/sun-xxl.png" id="switch-theme" alt="theme"
+						height="36px" style="float:right;margin:1rem"></button>
 			</nav>
 			<div class="container">
 				<div class="row">
@@ -86,7 +88,7 @@
 									Plzeň</span></li>
 						</ul>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-8" id="paragraphs">
 						<h2>Ahoj!</h2>
 						<p>Jsem motivovaný a ambiciózní mladý vývojář, připravený vzdělávat se v oblasti vývoje. Mé
 							zkušenosti z této pozice posílily mé schopnosti v oblasti navrhování, implementace,
@@ -138,6 +140,28 @@
 		<!-- Main -->
 		<script src="js/main.js"></script>
 
+		<!-- Toggle Theme -->
+		<script>
+
+
+			let switch_style = () => {
+				var light = document.getElementById("theme-light");
+				var dark = document.getElementById("theme-dark");
+				if (light.disabled) {
+					document.getElementById("switch-theme").src = "https://www.iconsdb.com/icons/preview/white/sun-xxl.png";
+					light.removeAttribute('disabled');
+					dark.setAttribute('disabled','true');
+				} else {
+					document.getElementById("switch-theme").src = "images/sun-xxl.png";
+					light.setAttribute('disabled','true');
+					dark.removeAttribute('disabled');
+				}
+			}
+
+
+
+
+		</script>
 
 		<!-- Language -->
 		<script>
