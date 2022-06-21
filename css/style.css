@@ -5,11 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*
-* ======================================================= */
+
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
@@ -81,7 +77,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::selection {
   color: #fff;
-  background: #FF9000;
+  background: #0022ff;
+}
+
+nav .navbar {
+  position: fixed;
+}
+
+a .flags {
+  padding: .5rem 0 0 1rem;
 }
 
 #fh5co-header,
@@ -352,13 +356,11 @@ h1, h2, h3, h4, h5, h6, figure {
   list-style: none;
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   *display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   *display: inline;
   color: #FF9000;
   padding-left: 10px;
@@ -377,13 +379,11 @@ h1, h2, h3, h4, h5, h6, figure {
   list-style: none;
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   *display: inline;
 }
 #fh5co-about .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
-  zoom: 1;
   *display: inline;
   color: #fff;
   background: #2F3C4F;

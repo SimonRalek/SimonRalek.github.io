@@ -6,7 +6,7 @@
 		(localStorage.getItem('language') == null) ? setLanguage('cs') : false;
 		$.ajax({ 
 			url:  localStorage.getItem('language') + '.json', 
-			dataType: 'jsonp', async: false, dataType: 'jsonp', 
+			dataType: 'jsonp', dataType: 'jsonp', 
 			success: function (lang) { language = lang } });
 	}
 
