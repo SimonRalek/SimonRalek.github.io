@@ -529,7 +529,7 @@ a .flags {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  background-color: rgba(0, 54, 202, 1);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
