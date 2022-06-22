@@ -159,7 +159,9 @@ getLanguage();
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut(900);
+		setTimeout(() => {
+			$(".fh5co-loader").fadeOut(900);
+		}, 200);
 	};
 
 	
