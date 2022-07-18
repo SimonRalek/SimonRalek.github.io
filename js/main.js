@@ -1,5 +1,5 @@
 (function () {
-  var language;
+  /*var language;
   function getLanguage() {
     localStorage.getItem("language") == null ? setLanguage("cs") : false;
     $.ajax({
@@ -15,7 +15,7 @@
   function setLanguage(lang) {
     localStorage.setItem("language", lang);
   }
-  getLanguage();
+  getLanguage();*/
 
   ("use strict");
 
