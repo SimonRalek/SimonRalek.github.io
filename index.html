@@ -54,14 +54,14 @@
       class="navbar navbar-light bg-light"
       style="position: absolute; width: 100%"
     >
-      <a href="/cs/" onclick="setLanguage('cs')" title="Czech"
+      <a href="/cs/" onclick="/* setLanguage('cs') */" title="Czech"
         ><img
           src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png"
           class="flags"
           height="36px"
           alt="cs-flag"
       /></a>
-      <a href="/en/" onclick="setLanguage('en')" title="English"
+      <a href="/en/" onclick="/* setLanguage('en') */" title="English"
         ><img
           src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
           class="flags"
@@ -78,7 +78,7 @@
       </div>
     </nav>
 
-    <div id="main-page"></div>
+    <div id="page"></div>
 
     <div id="fh5co-footer">
       <div class="container">
@@ -93,11 +93,9 @@
     <div class="gototop js-top">
       <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
     </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Waypoints -->
@@ -105,35 +103,20 @@
     <!-- Stellar Parallax -->
     <script src="js/jquery.stellar.min.js"></script>
     <!-- Easy PieChart -->
-    <script src="js/jquery.easypiechart.min.js"></script>
+    <!-- <script src="js/jquery.easypiechart.min.js"></script> -->
     <!-- Modernizer -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
 
     <!-- Main -->
     <script src="js/main.js"></script>
     <script src="js/router.js"></script>
     <!-- Toggle Theme -->
-    <script>
-      const chk = document.getElementById("chk");
-
-      chk.addEventListener("change", () => {
-        var light = document.getElementById("theme-light");
-        var dark = document.getElementById("theme-dark");
-        if (light.disabled) {
-          light.removeAttribute("disabled");
-          dark.setAttribute("disabled", "true");
-        } else {
-          light.setAttribute("disabled", "true");
-          dark.removeAttribute("disabled");
-        }
-      });
-    </script>
+    <script src="js/toggleTheme.js"></script>
 
     <!-- Language -->
     <script>
-      $(document).ready(() => {
+/*       $(document).ready(() => {
         $("#about_me").text(localStorage.getItem(language.about_me));
-      });
+      }); */
     </script>
   </body>
 </html>
