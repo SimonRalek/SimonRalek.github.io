@@ -84,8 +84,9 @@ nav .navbar {
   position: fixed;
 }
 
-a .flags {
-  margin: 1rem 0 0 1rem;
+button.flags {
+  background: transparent;
+  border: none;
 }
 
 #fh5co-header,

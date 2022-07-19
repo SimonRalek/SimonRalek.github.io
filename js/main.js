@@ -1,21 +1,4 @@
 (function () {
-  /*var language;
-  function getLanguage() {
-    localStorage.getItem("language") == null ? setLanguage("cs") : false;
-    $.ajax({
-      url: localStorage.getItem("language") + ".json",
-      dataType: "jsonp",
-      dataType: "jsonp",
-      success: function (lang) {
-        language = lang;
-      },
-    });
-  }
-
-  function setLanguage(lang) {
-    localStorage.setItem("language", lang);
-  }
-  getLanguage();*/
 
   ("use strict");
 
@@ -154,11 +137,36 @@
   // Loading page
   var loaderPage = function () {
     setTimeout(() => {
-      $(".fh5co-loader").fadeOut(900);
-    }, 200);
+      $(".fh5co-loader").fadeOut(700);
+    }, 100);
   };
 
-  $(function () {
+  $(function () {	
+	if(Cookies.get('lang') == 'en') {
+		$('[lang="cs"]').hide();
+		$('[lang="en"]').show();
+	}
+	if(Cookies.get('lang') == 'cs') {
+		$('[lang="en"]').hide();
+		$('[lang="cs"]').show();
+	}
+	if(Cookies.get('lang') == undefined) {
+		$('[lang="en"]').hide();
+		$('[lang="cs"]').show();
+	}
+  if(Cookies.get('theme') == 'dark') {
+    var light = document.getElementById("theme-light");
+    var dark = document.getElementById("theme-dark");
+    light.setAttribute("disabled", "true");
+    dark.removeAttribute("disabled");
+    document.getElementById("chk").checked = true;
+  } else {
+    var light = document.getElementById("theme-light");
+    var dark = document.getElementById("theme-dark");
+    dark.setAttribute("disabled", "true");
+    light.removeAttribute("disabled");
+    document.getElementById("chk").checked = false;
+  }
     contentWayPoint();
     goToTop();
     loaderPage();

@@ -1,84 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Simon Ralek</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio website - Simon Ralek" />
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Space+Mono"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
-      rel="stylesheet"
-    />
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Simon Ralek</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Portfolio website - Simon Ralek" />
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css" />
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
 
-    <!-- Theme style  -->
-    <link
-      id="theme-light"
-      rel="stylesheet"
-      title="light"
-      href="css/style.css"
-    />
-    <link
-      id="theme-dark"
-      rel="stylesheet"
-      title="dark"
-      href="css/dark-style.css"
-      disabled
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css" />
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css" />
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css" />
 
-  <body>
-    <div class="fh5co-loader"></div>
+	<!-- Theme style  -->
+	<link id="theme-light" rel="stylesheet" title="light" href="css/style.css" />
+	<link id="theme-dark" rel="stylesheet" title="dark" href="css/dark-style.css" disabled />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <nav
-      class="navbar navbar-light bg-light"
-      style="position: absolute; width: 100%;z-index: 999;"
-    >
-      <a href="/cs/" onclick="/* setLanguage('cs') */" title="Czech"
-        ><img
-          src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png"
-          class="flags"
-          height="36px"
-          alt="cs-flag"
-      /></a>
-      <a href="/en/" onclick="/* setLanguage('en') */" title="English"
-        ><img
-          src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
-          class="flags"
-          height="36px"
-          alt="en-flag"
-      /></a>
-      <div style="float: right; margin: 1.7rem 2rem 0 0">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fa-solid fa-moon"></i>
-          <i class="fa-solid fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-    </nav>
+<body>
+	<div class="fh5co-loader"></div>
 
-    <div id="page">
+	<nav class="navbar navbar-light bg-light" style="position: absolute; width: 100%;z-index: 999;">
+		<button title="Czech" id="cs" class="flags" style="margin:1rem 0 0 1rem"><img
+				src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png"
+				height="36px" alt="cs-flag" /></button>
+		<!-- <button id="switch-lang">Switch Language Icon Here</button> -->
+		<button title="English" id="en" class="flags" style="margin: 1rem 0 0 0;"><img
+				src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
+				height="36px" alt="en-flag" /></button>
+		<div style="float: right; margin: 1.7rem 2rem 0 0">
+			<input type="checkbox" class="checkbox" id="chk" />
+			<label class="label" for="chk">
+				<i class="fa-solid fa-moon"></i>
+				<i class="fa-solid fa-sun"></i>
+				<div class="ball"></div>
+			</label>
+		</div>
+	</nav>
+
+	<div id="page">
 		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
 			style="background-image:url(images/cover_bg.jpg);" loading="lazy" data-stellar-background-ratio="0.5">
 
@@ -93,11 +63,15 @@
 							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
 								<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
 								<h1>Šimon Rálek</h1>
-								<h3><span>Junior Vývojář Softwaru a Webových Aplikacích</span></h3>
+								<h3><span lang="cs">Junior Vývojář Softwaru a Webových Aplikacích</span><span
+										lang="en">Junior Software and Web Application Developer</span></h3>
 								<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="CV.pdf" download><button class="btn btn-primary">Stáhnout
-												CV</button></a></li>
+									<li lang="cs"><a href="CV-cs.pdf" download><button class="btn btn-primary">
+												<span>Stáhnout CV</span>
+											</button></a></li>
+									<li lang="en"><a href="CV-en.pdf" download><button
+												class="btn btn-primary"><span>Download CV</span></button></a></li>
 								</ul>
 								</p>
 							</div>
@@ -112,38 +86,57 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>O mě</h2>
+						<h2 lang="cs">O mě</h2>
+						<h2 lang="en">About me</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
 						<ul class="info">
-							<li><span class="first-block">Celé jméno:</span><span class="second-block">Šimon
+							<li><span lang="cs" class="first-block">Celé jméno:</span><span lang="en"
+									class="first-block">Full name:</span><span class="second-block">Šimon
 									Rálek</span></li>
-							<li><span class="first-block">Telefon:</span><span class="second-block"><a
+							<li><span lang="cs" class="first-block">Telefon:</span><span lang="en"
+									class="first-block">Phone:</span><span class="second-block"><a
 										href="tel:+420 725 423 079">+420 725 423 079</a></span>
 							</li>
 							<li><span class="first-block">Email:</span><span class="second-block"><a
 										href="mailto:simon.ralek@gmail.com"">simon.ralek@gmail.com</a></span></li>
-							<li><span class=" first-block">Website:</span><span class="second-block"><a
+							<li><span lang=" cs" class="first-block">Stránky:</span><span lang="en" class="first-block">Website:</span><span
+									class="second-block"><a
 										href="https://simonralek.github.io">simonralek.github.io</a></span></li>
-							<li><span class="first-block">Address:</span><span class="second-block">Ke Kukačce 9,
-									Plzeň</span></li>
+							<li><span lang="cs" class="first-block">Bydliště:</span><span lang="en"
+									class="first-block">City:</span><span class="second-block">
+									Plzeň 31200</span></li>
 						</ul>
 					</div>
 					<div class="col-md-8" id="paragraphs">
-						<h2>Ahoj!</h2>
-						<p>Jsem motivovaný a ambiciózní mladý vývojář, připravený vzdělávat se v oblasti vývoje. Mé
+						<h2 lang="cs">Ahoj!</h2>
+						<h2 lang="en">Hi!</h2>
+						<p lang="cs">Jsem motivovaný a ambiciózní mladý vývojář, připravený vzdělávat se v oblasti
+							vývoje. Mé
 							zkušenosti z této pozice posílily mé schopnosti v oblasti navrhování, implementace,
 							testování a
 							aktualizace softwaru. Jsem přesvědčen, že pokud dostanu příležitost, mohu být pro vaší
 							společnost užitečným talentem.</p>
-						<p>Mým hlavním cílem je uplatnit své technické znalosti v celém životním cyklu softwaru a
+						<p lang="en">I am a motivated and ambitious young developer, ready to learn the development
+							field. My experience in this position has strengthened my skills in designing, implementing,
+							testing and updating software. I am confident that if given the opportunity, I can be a
+							useful talent for your company.</p>
+						<p lang="cs">Mým hlavním cílem je uplatnit své technické znalosti v celém životním cyklu
+							softwaru a
 							zajistit
 							výrobu a dodání produktů a služeb, které splňují specifikace klienta. Spolu s kompetentním
 							týmem vývojářů softwaru a díky silným osobním znalostem, dovednostem a zkušenostem v
 							oblasti softwarového inženýrství jsem přesvědčen, že tohoto cíle lze dosáhnout.</p>
-						<p>
+						<p lang="en">
+							My main goal is to apply my technical knowledge throughout the life cycle
+							of the software and
+							ensure
+							production and delivery of products and services that meet client specifications. Together
+							with a competent
+							team of software developers and with strong personal knowledge, skills and experience in
+							software engineering, I am confident that this goal can be achieved.
 						</p>
 					</div>
 				</div>
@@ -154,7 +147,8 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Časová osa</h2>
+						<h2 lang="cs">Časová osa</h2>
+						<h2 lang="en">Timeline</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -162,37 +156,48 @@
 						<ul class="timeline">
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3 class="timeline-head">Vzdělání</h3>
+									<h3 lang="cs" class="timeline-head">Vzdělání</h3>
+									<h3 lang="en" class="timeline-head">Education</h3>
 								</div>
 							</li>
 							<li class="timeline-inverted animate-box">
 								<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">Střední průmyslová škola</h3>
-										<span class="company">2020 - současnost</span>
+										<h3 lang="cs" class="timeline-title">Střední průmyslová elektrotechnická škola
+										</h3>
+										<h3 lang="en" class="timeline-title">High school electrotechnical</h3>
+										<span lang="cs" class="company">2020 - současnost</span>
+										<span lang="en" class="company">2020 - present</span>
 									</div>
 									<div class="timeline-body">
-										<p>Studuji druhým rokem v oboru Vývoji aplikací a správa systémů</p>
+										<p lang="cs">Studuji druhým rokem v oboru Vývoji aplikací a správa systémů.</p>
+										<p lang="en">I am a second year student in Application Development and Systems
+											Administration.</p>
 									</div>
 								</div>
 							</li>
 							<br>
 							<li class="timeline-heading text-center animate-box">
 								<div>
-									<h3 class="timeline-head">Práce</h3>
+									<h3 lang="cs" class="timeline-head">Práce</h3>
+									<h3 lang="en" class="timeline-head">Work</h3>
 								</div>
 							</li>
 							<li class="animate-box timeline-unverted">
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">PHP programátor</h3>
+										<h3 lang="cs" class="timeline-title">PHP programátor</h3>
+										<h3 lang="en" class="timeline-title">PHP programmer</h3>
 										<span class="company">AdminIT: 21.2.2022 - 13.5.2022</span>
 									</div>
 									<div class="timeline-body">
-										<p>Pracoval jsem ve firmě 3 měsíce jako PHP programátor v frameworku Nette.
-											Pracoval jsem taktéž s relačními databázemi.</p>
+										<p lang="cs">Pracoval jsem ve firmě 3 měsíce jako PHP programátor v frameworku
+											Nette.
+											Taktéž jsem pracoval s relačními databázemi.</p>
+										<p lang="en">I worked in a company for 3 months as a PHP programmer in the Nette
+											framework. I also worked with relational databases.</p>
 									</div>
 								</div>
 							</li>
@@ -201,11 +206,14 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 class="timeline-title">ExtJS a C# programátor</h3>
-										<span class="company">TD-IS: 1.7 - součastnost</span>
+										<h3 lang="cs" class="timeline-title">ExtJS a C# programátor</h3>
+										<h3 lang="en" class="timeline-title">ExtJS and C# programmer</h3>
+										<span lang="cs" class="company">TD-IS: 1.7 - součastnost</span>
+										<span lang="en" class="company">TD-IS: 1.7 - present</span>
 									</div>
 									<div class="timeline-body">
-										<p>Vývoj ERP systému ET2</p>
+										<p lang="cs">Vývoj ERP systému ET2</p>
+										<p lang="en">Development of ERP system ET2</p>
 									</div>
 								</div>
 							</li>
@@ -214,46 +222,63 @@
 				</div>
 			</div>
 		</div>
-      
+
 	</div>
 
-    <div id="fh5co-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>&copy; 2022 Šimon Rálek. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; 2022 Šimon Rálek. <span lang="en">All Rights Reserved</span><span lang="cs">Všechna práva
+							vyhrazena</span>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="gototop js-top">
-      <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-    </div>
-	
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	<!-- Modernizer -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- JQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<!-- Cookies -->
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+	<!-- Jquery migrate -->
 	<script src="js/jquery-migrate.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Stellar Parallax -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- Easy PieChart -->
-    <!-- <script src="js/jquery.easypiechart.min.js"></script> -->
-    <!-- Modernizer -->
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
 
-    <!-- Main -->
-    <script src="js/main.js"></script>
-    <!-- Toggle Theme -->
-    <script src="js/toggleTheme.js"></script>
+	<!-- Language -->
+	<script>
 
-    <!-- Language -->
-    <script>
-/*       $(document).ready(() => {
-        $("#about_me").text(localStorage.getItem(language.about_me));
-      }); */
-    </script>
-  </body>
+		$(function () {
+			$('#en').click(function () {
+				$('[lang="cs"]').hide();
+				$('[lang="en"]').show();
+				Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
+			});
+
+			$('#cs').click(function () {
+				$('[lang="en"]').hide();
+				$('[lang="cs"]').show();
+				Cookies.set('lang', 'cs', { sameSite: 'strict', expires: 7 });
+			});
+
+		})
+
+	</script>
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<!-- Toggle Theme -->
+	<script src="js/toggleTheme.js"></script>
+
+</body>
+
 </html>
