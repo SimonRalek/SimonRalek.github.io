@@ -261,17 +261,40 @@
 			$('#en').click(function () {
 				$('[lang="cs"]').hide();
 				$('[lang="en"]').show();
+				window.location = "/en";
 				Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
 			});
 
 			$('#cs').click(function () {
 				$('[lang="en"]').hide();
 				$('[lang="cs"]').show();
+				window.location = "/";
 				Cookies.set('lang', 'cs', { sameSite: 'strict', expires: 7 });
 			});
 
 		})
+		const route = (event) => {
+  event = event || window.event;
+  event.preventDefault();
+  window.history.pushState({}, "", event.target.href);
+  handleLocation();
+};
 
+const routes = {
+	"/" : '',
+	"/en" : ''
+}
+
+const handleLocation = async () => {
+  const path = window.location.pathname;
+  const route = routes[path] || routes[404];
+  const html = await fetch(route).then((data) => data.text());
+};
+
+window.onpopstate = handleLocation;
+window.route = route;
+
+handleLocation();
 	</script>
 
 	<!-- Main -->

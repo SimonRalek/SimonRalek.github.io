@@ -160,12 +160,14 @@
     light.setAttribute("disabled", "true");
     dark.removeAttribute("disabled");
     document.getElementById("chk").checked = true;
+    window.location = "/en";
   } else {
     var light = document.getElementById("theme-light");
     var dark = document.getElementById("theme-dark");
     dark.setAttribute("disabled", "true");
     light.removeAttribute("disabled");
     document.getElementById("chk").checked = false;
+    window.location = "/";
   }
     contentWayPoint();
     goToTop();
