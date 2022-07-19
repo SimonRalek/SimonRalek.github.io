@@ -261,19 +261,25 @@
 			$('#en').click(function () {
 				$('[lang="cs"]').hide();
 				$('[lang="en"]').show();
-				window.location = "/en";
-				Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
+				$(".fh5co-loader").show();	
+				setTimeout(() => {
+      $(".fh5co-loader").fadeOut(300);
+    },80);
+			Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
 			});
 
 			$('#cs').click(function () {
 				$('[lang="en"]').hide();
 				$('[lang="cs"]').show();
-				window.location = "/";
+				$(".fh5co-loader").show();	
+				setTimeout(() => {
+      $(".fh5co-loader").fadeOut(300);
+    },80);
 				Cookies.set('lang', 'cs', { sameSite: 'strict', expires: 7 });
 			});
 
 		})
-		const route = (event) => {
+/* 		const route = (event) => {
   event = event || window.event;
   event.preventDefault();
   window.history.pushState({}, "", event.target.href);
@@ -294,7 +300,7 @@ const handleLocation = async () => {
 window.onpopstate = handleLocation;
 window.route = route;
 
-handleLocation();
+handleLocation(); */
 	</script>
 
 	<!-- Main -->
