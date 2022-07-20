@@ -67,7 +67,7 @@
 										lang="en">Junior Software and Web Application Developer</span></h3>
 								<p>
 								<ul class="fh5co-social-icons">
-									<li lang="cs"><a href="CV-cs.pdf" download><button class="btn btn-primary">
+									<li lang="cs"><a href="CV-cs.pdf" target="_blank" download><button class="btn btn-primary">
 												<span>Stáhnout CV</span>
 											</button></a></li>
 									<li lang="en"><a href="CV-en.pdf" download><button
@@ -206,14 +206,14 @@
 								<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 								<div class="timeline-panel">
 									<div class="timeline-heading">
-										<h3 lang="cs" class="timeline-title">ExtJS a C# programátor</h3>
-										<h3 lang="en" class="timeline-title">ExtJS and C# programmer</h3>
+										<h3 lang="cs" class="timeline-title">JavaScript a C# programátor</h3>
+										<h3 lang="en" class="timeline-title">JavaScript and C# programmer</h3>
 										<span lang="cs" class="company">TD-IS: 1.7 - součastnost</span>
 										<span lang="en" class="company">TD-IS: 1.7 - present</span>
 									</div>
 									<div class="timeline-body">
-										<p lang="cs">Vývoj ERP systému ET2</p>
-										<p lang="en">Development of ERP system ET2</p>
+										<p lang="cs">Vývoj ERP systému ET2 ve frameworku ExtJS</p>
+										<p lang="en">Development of ERP system ET2 in ExtJS framework</p>
 									</div>
 								</div>
 							</li>
@@ -261,11 +261,11 @@
 			$('#en').click(function () {
 				$('[lang="cs"]').hide();
 				$('[lang="en"]').show();
-				$(".fh5co-loader").show();	
+				$(".fh5co-loader").show();
 				setTimeout(() => {
-      $(".fh5co-loader").fadeOut(300);
-    },80);
-			Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
+      				$(".fh5co-loader").fadeOut(300);
+    			},80);
+				Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
 			});
 
 			$('#cs').click(function () {
@@ -273,8 +273,8 @@
 				$('[lang="cs"]').show();
 				$(".fh5co-loader").show();	
 				setTimeout(() => {
-      $(".fh5co-loader").fadeOut(300);
-    },80);
+      				$(".fh5co-loader").fadeOut(300);
+    			},80);
 				Cookies.set('lang', 'cs', { sameSite: 'strict', expires: 7 });
 			});
 
