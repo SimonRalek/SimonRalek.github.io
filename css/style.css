@@ -254,7 +254,7 @@ button.flags {
 }
 
 #fh5co-features {
-  background: #FF9000;
+  background:rgba(0, 54, 202, 1); 
 }
 
 #fh5co-features h2 {
@@ -462,6 +462,15 @@ button.flags {
   margin-bottom: 5em;
 }
 
+.fh5co-subheading{
+  margin-bottom: 3em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
@@ -471,6 +480,12 @@ button.flags {
   margin-bottom: 20px;
   line-height: 1.5;
   color: #000;
+}
+.fh5co-subheading h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: white;
 }
 
 .fh5co-heading p {

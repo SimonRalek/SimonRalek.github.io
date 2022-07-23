@@ -1,5 +1,4 @@
 (function () {
-
   ("use strict");
 
   var isMobile = {
@@ -141,32 +140,32 @@
     }, 100);
   };
 
-  $(function () {	
-	if(Cookies.get('lang') == 'en') {
-		$('[lang="cs"]').hide();
-		$('[lang="en"]').show();
-	}
-	if(Cookies.get('lang') == 'cs') {
-		$('[lang="en"]').hide();
-		$('[lang="cs"]').show();
-	}
-	if(Cookies.get('lang') == undefined) {
-		$('[lang="en"]').hide();
-		$('[lang="cs"]').show();
-	}
-  if(Cookies.get('theme') == 'dark') {
-    var light = document.getElementById("theme-light");
-    var dark = document.getElementById("theme-dark");
-    light.setAttribute("disabled", "true");
-    dark.removeAttribute("disabled");
-    document.getElementById("chk").checked = true;
-  } else {
-    var light = document.getElementById("theme-light");
-    var dark = document.getElementById("theme-dark");
-    dark.setAttribute("disabled", "true");
-    light.removeAttribute("disabled");
-    document.getElementById("chk").checked = false;
-  }
+  $(function () {
+    if (Cookies.get("lang") == "en") {
+      $('[lang="cs"]').hide();
+      $('[lang="en"]').show();
+    }
+    if (Cookies.get("lang") == "cs") {
+      $('[lang="en"]').hide();
+      $('[lang="cs"]').show();
+    }
+    if (Cookies.get("lang") == undefined) {
+      $('[lang="en"]').hide();
+      $('[lang="cs"]').show();
+    }
+    if (Cookies.get("theme") == "dark") {
+      var light = document.getElementById("theme-light");
+      var dark = document.getElementById("theme-dark");
+      light.setAttribute("disabled", "true");
+      dark.removeAttribute("disabled");
+      document.getElementById("chk").checked = true;
+    } else {
+      var light = document.getElementById("theme-light");
+      var dark = document.getElementById("theme-dark");
+      dark.setAttribute("disabled", "true");
+      light.removeAttribute("disabled");
+      document.getElementById("chk").checked = false;
+    }
     contentWayPoint();
     goToTop();
     loaderPage();

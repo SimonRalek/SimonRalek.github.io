@@ -222,7 +222,7 @@ button.flags {
 }
 
 #fh5co-features {
-  background: #FF9000;
+  background: rgba(0, 54, 202, 1);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -245,7 +245,7 @@ button.flags {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: #fff;
+  background: rgb(0, 0, 0);
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1349,4 +1349,20 @@ button#toggleTheme{
 
 .fa-sun {
 	color: #fffb00;
+}
+
+
+.fh5co-subheading{
+  margin-bottom: 3em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.fh5co-subheading h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: white;
 }
