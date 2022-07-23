@@ -6,10 +6,18 @@ chk.addEventListener("change", () => {
   if (light.disabled) {
     light.removeAttribute("disabled");
     dark.setAttribute("disabled", "true");
-    Cookies.set('theme','light')
+    Cookies.set('theme','light');
+				$(".fh5co-loader").show();
+				setTimeout(() => {
+					$(".fh5co-loader").fadeOut(300);
+				}, 80);
   } else {
     light.setAttribute("disabled", "true");
     dark.removeAttribute("disabled");
     Cookies.set('theme','dark');
+				$(".fh5co-loader").show();
+				setTimeout(() => {
+					$(".fh5co-loader").fadeOut(300);
+				}, 80);
   }
 });
