@@ -143,7 +143,7 @@ chk.addEventListener("change", () => {
       $(".fh5co-loader").show();
 				setTimeout(() => {
 					$(".fh5co-loader").fadeOut(300);
-				}, 80);
+				}, 120);
     }
 				
   } else {
@@ -154,7 +154,7 @@ chk.addEventListener("change", () => {
       $(".fh5co-loader").show();
 				setTimeout(() => {
 					$(".fh5co-loader").fadeOut(300);
-				}, 80);
+				}, 120);
     }
 				
   }
