@@ -105,7 +105,9 @@ button.flags {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 54, 202, 0.8);
+
+  background: rgb(9,53,121);
+background: linear-gradient(90deg, rgba(9,53,121,0.8) 0%, rgba(0,54,202,0.8) 50%, rgba(0,121,255,0.8) 100%);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -222,7 +224,9 @@ button.flags {
 }
 
 #fh5co-features {
-  background: rgba(0, 54, 202, 1);
+ background: rgb(9,53,121);
+background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rgba(0,121,255,1) 100%); 
+
 }
 #fh5co-features h2 {
   color: #fff;
