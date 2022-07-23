@@ -139,7 +139,7 @@ chk.addEventListener("change", () => {
     light.removeAttribute("disabled");
     dark.setAttribute("disabled", "true");
     Cookies.set('theme','light');
-    if(isMobile.any) {
+    if(isMobile.any()) {
       $(".fh5co-loader").show();
 				setTimeout(() => {
 					$(".fh5co-loader").fadeOut(300);
@@ -150,7 +150,7 @@ chk.addEventListener("change", () => {
     light.setAttribute("disabled", "true");
     dark.removeAttribute("disabled");
     Cookies.set('theme','dark');
-    if(isMobile.any){
+    if(isMobile.any()){
       $(".fh5co-loader").show();
 				setTimeout(() => {
 					$(".fh5co-loader").fadeOut(300);
