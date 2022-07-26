@@ -15,7 +15,7 @@
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css" />
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css" />
+	<!-- <link rel="stylesheet" href="css/icomoon.css" /> -->
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
 
@@ -38,14 +38,21 @@
 		<button title="English" id="en" class="flags" style="margin: 1rem 0 0 0;"><img
 				src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
 				height="36px" alt="en-flag" /></button>
-		<div style="float: right; margin: 1.7rem 2rem 0 0">
+
+
+				
+<input type="checkbox" id="toggle" class="toggle--checkbox">
+<label for="toggle" class="toggle--label" style="float: right;margin: 1.7rem 2rem 0 0">
+  <span class="toggle--label-background"></span>
+</label>
+<!-- 		<div style="float: right; margin: 1.7rem 2rem 0 0">
 			<input type="checkbox" class="checkbox" id="chk" />
 			<label class="label" for="chk">
 				<i class="fa-solid fa-moon"></i>
 				<i class="fa-solid fa-sun"></i>
 				<div class="ball"></div>
 			</label>
-		</div>
+		</div> -->
 	</nav>
 
 	<div id="page">
@@ -615,28 +622,7 @@
 			});
 
 		})
-/* 		const route = (event) => {
-																						  event = event || window.event;
-																						  event.preventDefault();
-																						  window.history.pushState({}, "", event.target.href);
-																						  handleLocation();
-																						};
-																						
-																						const routes = {
-																							"/" : '/',
-																							"/en" : '/en'
-																						}
-																						
-																						const handleLocation = async () => {
-																						  const path = window.location.pathname;
-																						  const route = routes[path] || routes[404];
-																						  const html = await fetch(route).then((data) => data.text());
-																						};
-																						
-																						window.onpopstate = handleLocation;
-																						window.route = route;
-																						
-																						handleLocation(); */
+
 	</script>
 
 	<!-- Main -->

@@ -130,33 +130,19 @@
       );
     }
   };
-const chk = document.getElementById("chk");
+const chk = document.getElementById("toggle");
 
 chk.addEventListener("change", () => {
   var light = document.getElementById("theme-light");
   var dark = document.getElementById("theme-dark");
   if (light.disabled) {
-    light.removeAttribute("disabled");
     dark.setAttribute("disabled", "true");
+    light.removeAttribute("disabled");
     Cookies.set('theme','light');
-    if(isMobile.any()) {
-      $(".fh5co-loader").show();
-				setTimeout(() => {
-					$(".fh5co-loader").fadeOut(300);
-				}, 120);
-    }
-				
   } else {
-    light.setAttribute("disabled", "true");
     dark.removeAttribute("disabled");
+    light.setAttribute("disabled", "true");
     Cookies.set('theme','dark');
-    if(isMobile.any()){
-      $(".fh5co-loader").show();
-				setTimeout(() => {
-					$(".fh5co-loader").fadeOut(300);
-				}, 120);
-    }
-				
   }
 });
 
@@ -184,15 +170,15 @@ chk.addEventListener("change", () => {
     if (Cookies.get("theme") == "dark") {
       var light = document.getElementById("theme-light");
       var dark = document.getElementById("theme-dark");
-      light.setAttribute("disabled", "true");
       dark.removeAttribute("disabled");
-      document.getElementById("chk").checked = true;
+      light.setAttribute("disabled", "true");
+      document.getElementById("toggle").checked = true;
     } else {
       var light = document.getElementById("theme-light");
       var dark = document.getElementById("theme-dark");
-      dark.setAttribute("disabled", "true");
       light.removeAttribute("disabled");
-      document.getElementById("chk").checked = false;
+      dark.setAttribute("disabled", "true");
+      document.getElementById("toggle").checked = false;
     }
     contentWayPoint();
     goToTop();
