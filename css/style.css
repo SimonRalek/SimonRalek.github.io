@@ -1737,7 +1737,7 @@ button#toggleTheme{
   width: 1.5625px;
 }
 .toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
-  width: 1.5625px;
+  width: 1.70px;
   height: 1.5625px;
   top: -9.375px;
 }
@@ -1820,7 +1820,7 @@ button#toggleTheme{
   transition: all 190ms ease-in;
   position: absolute;
   content: "";
-  box-shadow: var(--gray-dots) -6.5px 0 0 1px, var(--gray-dots) -12px 7px 0 -1px;
+  box-shadow: var(--gray-dots) -5px 0 0 1px, var(--gray-dots) -10px 4px 0 -0px;
   left: 53.625px;
   top: 8.625px;
   width: 3.75px;
@@ -1920,5 +1920,5 @@ button#toggleTheme{
   transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.7s;
 }
 .timeline-head {
-  color: var(--color-bg);
+  color: #202020;
 }
