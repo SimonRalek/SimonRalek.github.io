@@ -155,10 +155,10 @@
       $('[lang="cs"]').show();
     }
     if (Cookies.get("theme") == "dark") {
-      document.documentElement.className = 'theme-dark';
+      document.body.className = 'theme-dark';
       document.getElementById("toggle").checked = true;
     } else {
-      document.getElementById.className = 'theme-light';
+      document.body.className = 'theme-light';
       document.getElementById("toggle").checked = false;
     }
     contentWayPoint();
