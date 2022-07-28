@@ -1522,18 +1522,6 @@ input[type="text"] {
 /*# sourceMappingURL=style.css.map */
 
 
-button#toggleTheme{
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  /*optional*/
-  font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: #069;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .checkbox {
 	opacity: 0;
 	position: absolute;
@@ -1569,14 +1557,6 @@ button#toggleTheme{
 	transform: translateX(20px);
 }
 
-
-.fa-moon {
-	color: #f4af00;
-}
-
-.fa-sun {
-	color: #fffb00;
-}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -1674,23 +1654,6 @@ button#toggleTheme{
   justify-content: center;
 }
 
-/* .btn-github button{
-  background-color: transparent;
-  border: 2px solid #fff;
-  width: 220px;
-  position: absolute;
-  bottom: 50px;
-  height: 50px;
-  transition: 0.3s;
-}
-.btn-github button:hover {
-  transition: 0.3s;
-  border-radius: 10px 10px 10px 10px;
-}
-.btn-github span {
-  font-size: 14px;
-  color: #FFF;
-} */
 .card .content .from-bottom .title {
   font-family: "Avenir Next", sans-serif;
   font-weight: 900;
@@ -1699,10 +1662,6 @@ button#toggleTheme{
   letter-spacing: 0.05em;
   display: inline-block;
 }
-  
-
-  
-
 :root {
   /** sunny side **/
   --blue-background: #C2E9F6;
