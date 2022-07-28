@@ -29,10 +29,10 @@
   };
 
   var fullHeight = function () {
+    $(".js-fullheight").css("height", $(window).height());
+    $(window).resize(function () {
       $(".js-fullheight").css("height", $(window).height());
-      $(window).resize(function () {
-        $(".js-fullheight").css("height", $(window).height());
-      });
+    });
   };
 
   // Parallax
@@ -82,16 +82,7 @@
 
   var goToTop = function () {
     $(".js-gotop").on("click", function (event) {
-      event.preventDefault();
-
-      $("html, body").animate(
-        {
-          scrollTop: $("html").offset().top,
-        },
-        500,
-        "easeInOutExpo"
-      );
-
+      $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
     });
 
@@ -130,22 +121,18 @@
       );
     }
   };
-const chk = document.getElementById("toggle");
+  const chk = document.getElementById("toggle");
 
-chk.addEventListener("change", () => {
-  var light = document.getElementById("theme-light");
-  var dark = document.getElementById("theme-dark");
-  if (light.disabled) {
-    dark.setAttribute("disabled", "true");
-    light.removeAttribute("disabled");
-    Cookies.set('theme','light');
-  } else {
-    dark.removeAttribute("disabled");
-    light.setAttribute("disabled", "true");
-    Cookies.set('theme','dark');
-  }
-});
-
+  chk.addEventListener("change", () => {
+    var theme = document.body.className;
+    if (theme == 'theme-light') {
+      document.body.className = 'theme-dark';
+      Cookies.set("theme", "dark");
+    } else {
+      document.body.className = 'theme-light';
+      Cookies.set("theme", "light");
+    }
+  });
 
   // Loading page
   var loaderPage = function () {
@@ -168,16 +155,10 @@ chk.addEventListener("change", () => {
       $('[lang="cs"]').show();
     }
     if (Cookies.get("theme") == "dark") {
-      var light = document.getElementById("theme-light");
-      var dark = document.getElementById("theme-dark");
-      dark.removeAttribute("disabled");
-      light.setAttribute("disabled", "true");
+      document.documentElement.className = 'theme-dark';
       document.getElementById("toggle").checked = true;
     } else {
-      var light = document.getElementById("theme-light");
-      var dark = document.getElementById("theme-dark");
-      light.removeAttribute("disabled");
-      dark.setAttribute("disabled", "true");
+      document.getElementById.className = 'theme-light';
       document.getElementById("toggle").checked = false;
     }
     contentWayPoint();

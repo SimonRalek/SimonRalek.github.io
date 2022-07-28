@@ -1,10 +1,23 @@
+.theme-light {
+  --color-bg: #fff;
+  --color-primary-font: #303030;
+  --color-secondary-font: #00000080;
+}
+
+.theme-dark {
+  --color-bg: #303030;
+  --color-primary-font: #fff;
+  --color-secondary-font: #ffffffb3;
+}
+
 body {
   font-family: "Montserrat", Arial, serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #4d4d4d;
-  background: #fff
+  scroll-behavior: smooth;
+  color: var(--color-secondary-font);
+  background: var(--color-bg);
 }
 
 #page {
@@ -62,7 +75,7 @@ h4,
 h5,
 h6,
 figure {
-  color: #000;
+  color: var(--color-primary-font);
   font-family: "Roboto Mono", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -312,7 +325,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
 }
 
 #fh5co-features .feature-left p a {
-  color: #000 !important;
+  color: var(--color-primary-font) !important;
 }
 
 #fh5co-about,
@@ -381,7 +394,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
 .info li .first-block {
   width: 40%;
   display: inline-block;
-  color: #000;
+  color: var(--color-primary-font);
   font-weight: bold;
 }
 
@@ -473,7 +486,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #000;
+  color: var(--color-primary-font);
 }
 .fh5co-subheading h3 {
   font-size: 30px;
@@ -1017,7 +1030,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
 }
 
 .fh5co-blog .blog-text .stuff li:last-child a {
-  color: #000;
+  color: var(--color-primary-font);
 }
 
 .fh5co-blog .blog-text .stuff li:last-child i {
@@ -1144,7 +1157,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
-  color: #000;
+  color: var(--color-primary-font);
 }
 
 .contact-info li i {
@@ -1156,7 +1169,7 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
 }
 
 .contact-info li a {
-  color: #000;
+  color: var(--color-primary-font);
 }
 
 .form-control {
@@ -1654,7 +1667,8 @@ button#toggleTheme{
   display: flex;
   justify-content: center;
 }
-.btn-github button{
+
+/* .btn-github button{
   background-color: transparent;
   border: 2px solid #fff;
   width: 220px;
@@ -1670,7 +1684,7 @@ button#toggleTheme{
 .btn-github span {
   font-size: 14px;
   color: #FFF;
-}
+} */
 .card .content .from-bottom .title {
   font-family: "Avenir Next", sans-serif;
   font-weight: 900;
@@ -1835,4 +1849,67 @@ button#toggleTheme{
   100% {
     left: 1.5px;
   }
+}
+#draw-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+
+#draw-border a {
+  display: flex;
+  justify-content: center;
+}
+
+#draw-border button {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  font-weight: bold;
+  outline: none;
+  position: relative;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+#draw-border button::before, #draw-border button::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: '';
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+#draw-border button::after {
+  bottom: 0;
+  right: 0;
+}
+
+#draw-border button::before {
+  top: 0;
+  left: 0;
+}
+
+#draw-border button:hover::before, #draw-border button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+#draw-border button:hover::before {
+  border-top-color: #000;
+  border-right-color: #000;
+  transition: width 0.2s ease-out, height 0.2s ease-out 0.2s;
+}
+
+#draw-border button:hover::after {
+  border-bottom-color: #000;
+  border-left-color: #000;
+  transition: border-color 0s ease-out 0.4s, width 0.2s ease-out 0.4s, height 0.2s ease-out 0.7s;
 }
