@@ -33,4 +33,6 @@ HTML, CSS, SCSS, JavaScript, JQuery, JS-Cookies and some JS libraries.
 
 ![Main View](https://i.ibb.co/hLkCkXQ/Fire-Shot-Capture-004-Simon-Ralek-simonralek-github-io.png)
 
-![Main View](https://i.ibb.co/fX3Tsmx/s.png)
+![Timeline](https://i.ibb.co/fX3Tsmx/s.png)
+
+![Projects](https://i.ibb.co/x3nYypZ/projects.png)
