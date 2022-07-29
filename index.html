@@ -35,29 +35,49 @@
 <body class="theme-light">
 	<div class="fh5co-loader"></div>
 
-	<nav class="navbar navbar-light bg-light" style="position: absolute; width: 100%;z-index: 999;">
-		<button title="Czech" id="cs" class="flags" style="margin:1rem 0 0 1rem"><img
+	<nav class="navbar navbar-light bg-light">
+		<div class="navig">
+			<li class="button-dropdown">
+				<a href="javascript:void(0)" class="dropdown-toggle" lang="cs">
+					<i class="fa-solid fa-language"></i>Jazyk<span>▼</span>
+				</a>
+				<a href="javascript:void(0)" class="dropdown-toggle" lang="en">
+					<i class="fa-solid fa-language"></i>Language<span>▼</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<button id="cs">
+							<a href="javascript:void(0)">
+								<img src="images/cz-flag.png" alt="cz">
+								Čeština
+							</a>
+						</button>
+					</li>
+					<li>
+						<button id="en">
+							<a href="javascript:void(0)">
+								<img src="images/en-flag.png" alt="en">
+								English
+							</a>
+						</button>
+					</li>
+				</ul>
+			</li>
+		</div>
+		<!-- 		<button title="Czech" id="cs" class="flags"><img
 				src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/Czech-Republic-Flag-icon.png"
 				height="36px" alt="cs-flag" /></button>
-		<!-- <button id="switch-lang">Switch Language Icon Here</button> -->
-		<button title="English" id="en" class="flags" style="margin: 1rem 0 0 0;"><img
+	
+		<button title="English" id="en" class="flags"><img
 				src="https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/256/United-Kingdom-flag-icon.png"
 				height="36px" alt="en-flag" /></button>
-
+ -->
 
 
 		<input type="checkbox" id="toggle" class="toggle--checkbox">
-		<label for="toggle" class="toggle--label" style="float: right;margin: 1rem 1rem 0 0">
+		<label for="toggle" class="toggle--label">
 			<span class="toggle--label-background"></span>
 		</label>
-		<!-- 		<div style="float: right; margin: 1.7rem 2rem 0 0">
-			<input type="checkbox" class="checkbox" id="chk" />
-			<label class="label" for="chk">
-				<i class="fa-solid fa-moon"></i>
-				<i class="fa-solid fa-sun"></i>
-				<div class="ball"></div>
-			</label>
-		</div> -->
 	</nav>
 
 	<div id="page">
@@ -603,37 +623,11 @@
 	<script src="js/jquery.stellar.min.js"></script>
 
 	<!-- Language -->
-	<script>
-
-		$(function () {
-			$('#en').click(function () {
-				$('[lang="cs"]').hide();
-				$('[lang="en"]').show();
-				$(".fh5co-loader").show();
-				setTimeout(() => {
-					$(".fh5co-loader").fadeOut(300);
-				}, 80);
-				Cookies.set('lang', 'en', { sameSite: 'strict', expires: 7 });
-			});
-
-			$('#cs').click(function () {
-				$('[lang="en"]').hide();
-				$('[lang="cs"]').show();
-				$(".fh5co-loader").show();
-				setTimeout(() => {
-					$(".fh5co-loader").fadeOut(300);
-				}, 80);
-				Cookies.set('lang', 'cs', { sameSite: 'strict', expires: 7 });
-			});
-
-		})
-
-	</script>
+	<script src="js/languages.js"></script>
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!-- Toggle Theme -->
-	<!-- <script src="js/toggleTheme.js"></script> -->
+
 
 </body>
 

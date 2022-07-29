@@ -1718,6 +1718,8 @@ input[type="text"] {
   opacity: 1;
 }
 .toggle--label {
+  float: right;
+  margin: 1rem 1rem 0 0;
   width: 75px;
   height: 37.5px;
   background: var(--blue-color);
@@ -1880,4 +1882,84 @@ input[type="text"] {
 }
 .timeline-head {
   color: #202020;
+}
+.navbar{
+  position: absolute; 
+  width: 100%;
+  z-index: 999;
+}
+.navig {
+  display: inline-block;
+  font: 13px Helvetica, Tahoma, serif;
+  text-transform: uppercase;
+  margin: 0; 
+  padding: 0;
+  margin: 1rem 0 0 1rem;
+}
+
+.navig li {
+  display: inline-block;
+  list-style: none;
+}
+
+.navig .button-dropdown {
+  position: relative;
+  font-weight: bold;
+}
+
+.navig .button-dropdown i {
+  padding-right: 10px;
+}
+
+.navig li a {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary-font);
+  background-color: var(--color-bg);
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.navig li a span {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  color: var(--color-secondary-font);
+}
+
+.navig li button a:hover, .nav li a.dropdown-toggle.active {
+  
+  color: black;
+}
+
+.navig li button a:hover span, .nav li a.dropdown-toggle.active span {
+  color: black;
+}
+
+.navig li .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  text-align: left;
+  min-width: 130px;
+  background-color: var(--color-bg);
+}
+
+.navig li .dropdown-menu img {
+  padding-right: 10px;
+  width: 30px;
+}
+
+.navig li .dropdown-menu.active {
+  display: block;
+}
+
+.navig li button {
+  background: transparent;
+  border: none;
 }
