@@ -4,7 +4,7 @@ Hello, this is my portfolio I realeased officially on 24th July 2022. It is writ
 
 ## Viewing the site
 
-Click [here](https://pip.pypa.io/en/stable/) or manually type into search bar "simonralek.github.io"
+Click [here](https://simonralek.github.io/) or manually type into search bar "simonralek.github.io"
 
 
 
