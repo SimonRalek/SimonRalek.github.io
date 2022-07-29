@@ -1904,11 +1904,12 @@ input[type="text"] {
 
 .navig .button-dropdown {
   position: relative;
-  font-weight: bold;
+  border-radius: 10px;
 }
 
-.navig .button-dropdown i {
-  padding-right: 10px;
+.navig .button-dropdown hr {
+  width: 20px;
+  margin: 0;
 }
 
 .navig li a {
@@ -1916,7 +1917,7 @@ input[type="text"] {
   align-items: center;
   color: var(--color-primary-font);
   background-color: var(--color-bg);
-  padding: 10px 15px;
+  padding: 10px 10px;
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
@@ -1924,7 +1925,6 @@ input[type="text"] {
 
 .navig li a span {
   display: inline-block;
-  margin-left: 5px;
   font-size: 10px;
   color: var(--color-secondary-font);
 }
