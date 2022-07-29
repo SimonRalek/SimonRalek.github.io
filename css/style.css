@@ -1909,6 +1909,7 @@ input[type="text"] {
 
 .navig .button-dropdown hr {
   width: 20px;
+  color: var(--color-additional);
   margin: 0;
 }
 
