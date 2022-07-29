@@ -4,6 +4,7 @@
   --color-secondary-font: #00000080;
   --color-additional: rgba(0, 54, 202, 1);
   --color-href: rgba(0, 54, 202, 1);
+  --color-toptop: rgba(0,0,0,0.75);
   --color-footer: rgba(223, 223, 223, 0.881);
 }
 
@@ -13,6 +14,7 @@
   --color-secondary-font: #ffffffb3;
   --color-additional: #fff;
   --color-href: rgb(0, 162, 255);
+  --color-totop: rgba(234,224,200,0.75);
   --color-footer: rgb(46, 42, 42);
 }
 
@@ -1241,8 +1243,8 @@ input[type="text"] {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: var(--color-primary-font);
+  color: var(--color-bg);
   text-align: center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
