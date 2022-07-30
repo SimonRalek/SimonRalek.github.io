@@ -4,7 +4,7 @@ Hello, this is my portfolio I realeased officially on 24th July 2022. It is writ
 
 ## Viewing the site
 
-Click [here](https://pip.pypa.io/en/stable/) or manually type into search bar "simonralek.github.io"
+Click [here](https://simonralek.github.io/) or manually type into search bar "simonralek.github.io"
 
 
 
@@ -33,4 +33,6 @@ HTML, CSS, SCSS, JavaScript, JQuery, JS-Cookies and some JS libraries.
 
 ![Main View](https://i.ibb.co/hLkCkXQ/Fire-Shot-Capture-004-Simon-Ralek-simonralek-github-io.png)
 
-![Main View](https://i.ibb.co/fX3Tsmx/s.png)
+![Timeline](https://i.ibb.co/fX3Tsmx/s.png)
+
+![Projects](https://i.ibb.co/x3nYypZ/projects.png)
