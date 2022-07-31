@@ -1567,7 +1567,6 @@ input[type="text"] {
   background: rgb(9,53,121);
   background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rgba(0,121,255,1) 100%);
   border-radius:10px;
-  cursor: context-menu;
   color: white;
 }
 .card .profile{
