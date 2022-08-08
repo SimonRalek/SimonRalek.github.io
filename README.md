@@ -23,7 +23,7 @@ HTML, CSS, SCSS, JavaScript, JQuery, JS-Cookies and some JS libraries.
 
 #### When was the site last updated?
 
-29th July 2022
+30th July 2022
 
 ## Authors
 
