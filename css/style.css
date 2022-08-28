@@ -46,6 +46,19 @@ body {
   cursor: url('../images/cursor.png'),auto;
 }
 
+a:hover {
+  cursor: url('../images/cursor.png'),auto;
+
+}
+
+button:hover {
+  cursor: url('../images/cursor.png'),auto;
+}
+
+label:hover {
+  cursor: url('../images/cursor.png'),auto;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -1257,6 +1270,10 @@ input[type="text"] {
   visibility: visible;
 }
 
+.gototop:hover {
+  opacity: 0.85;
+}
+
 .gototop a {
   width: 50px;
   height: 50px;
@@ -1941,6 +1958,10 @@ input[type="text"] {
   text-decoration: none;
   font-weight: normal;
   font-size: 14px;
+}
+
+.navig li a:hover {
+  opacity: 0.8;
 }
 
 .navig li a span {
