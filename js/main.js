@@ -168,5 +168,12 @@
     parallax();
     // pieChart();
     skillsWayPoint();
+
+    var cursor = document.getElementsByClassName("cursor")[0];
+    document.body.addEventListener("mousemove", function(e) {
+      cursor.style.left = e.clientX + "px",
+      cursor.style.top = e.clientY + "px";
+    });
+
   });
 })();
