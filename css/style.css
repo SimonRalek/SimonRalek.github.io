@@ -23,7 +23,7 @@
 .cursor {
   position: fixed;
   border-radius: 50%;
-  transform: translateX(-35%) translateY(-35%);
+  transform: translateX(-33.5%) translateY(-33.5%);
   pointer-events: none;
   left: -100px;
   top: 50%;
@@ -1505,22 +1505,6 @@ input[type="text"] {
   right: 18px;
   visibility: visible;
   opacity: 1;
-}
-
-.form-control {
-  box-shadow: none;
-  background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  height: 54px;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.form-control:active,
-.form-control:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #FF9000;
 }
 
 .row-pb-md {
