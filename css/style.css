@@ -43,7 +43,6 @@ body {
   scroll-behavior: smooth;
   color: var(--color-secondary-font);
   background: var(--color-bg);
-  cursor: url('../images/cursor.png'),auto;
 }
 
 a:hover {
