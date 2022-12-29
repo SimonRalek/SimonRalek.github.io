@@ -20,21 +20,6 @@
   --color-footer: rgb(46, 42, 42);
 }
 
-.cursor {
-  position: fixed;
-  border-radius: 50%;
-  transform: translateX(-33.5%) translateY(-33.5%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
-  background-color: transparent;
-  z-index: 9999999;
-  border: 2px solid #e96c02;
-  height: 30px;
-  width: 30px;
-  transition: all 100ms ease-out;
-}
-
 body {
   font-family: "Montserrat", Arial, serif;
   font-weight: 400;
@@ -43,19 +28,6 @@ body {
   scroll-behavior: smooth;
   color: var(--color-secondary-font);
   background: var(--color-bg);
-}
-
-a:hover {
-  cursor: url('../images/cursor.png'),auto;
-
-}
-
-button:hover {
-  cursor: url('../images/cursor.png'),auto;
-}
-
-label:hover {
-  cursor: url('../images/cursor.png'),auto;
 }
 
 #page {
