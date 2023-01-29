@@ -1,7 +1,7 @@
 .theme-light {
   --color-bg: #fff;
   --color-primary-font: #202020;
-  --color-secondary-font: #00000080;
+  --color-secondary-font: #000000aa;
   --color-additional: rgba(0, 54, 202, 1);
   --color-href: #0036ca;
   --color-totop: rgba(0,0,0,0.75);
@@ -410,8 +410,9 @@ background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rg
 
 .info li .second-block {
   width: 60%;
-  display: inline-block;
+  display: flex;
   color: var(--color-secondary-font);
+  padding-top: 2px;
 }
 
 .fh5co-social-icons {
