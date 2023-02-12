@@ -105,6 +105,48 @@ figure {
   color: #fff;
   background: #0022ff;
 }
+.wave-top {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: linear-gradient(90deg, rgba(9,53,121,1) 0%, rgba(0,54,202,1) 50%, rgba(0,121,255,1) 100%);
+}
+
+.wave-top svg {
+  position: relative;
+  display: block;
+  width: calc(132% + 1.3px);
+  height: 47px;
+}
+
+.wave-top .shape-fill {
+  fill: #FFFFFF;
+}
+
+.wave-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background: linear-gradient(90deg, rgba(0,121,255,1) 0%, rgba(0,54,202,1) 50%, rgba(9,53,121,1) 100%);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(147% + 1.3px);
+  height: 47px;
+}
+
+.wave-bottom .shape-fill {
+  fill: #FFFFFF;
+}
 
 nav .navbar {
   position: fixed;
