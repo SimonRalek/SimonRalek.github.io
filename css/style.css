@@ -123,7 +123,7 @@ figure {
 }
 
 .wave-top .shape-fill {
-  fill: #FFFFFF;
+  fill: var(--color-bg);
 }
 
 .wave-bottom {
@@ -145,7 +145,7 @@ figure {
 }
 
 .wave-bottom .shape-fill {
-  fill: #FFFFFF;
+  fill: var(--color-bg);
 }
 
 nav .navbar {
