@@ -29,9 +29,13 @@
   };
 
   var fullHeight = function () {
-    $(".js-fullheight").css("height", $(window).height());
+    let height = $(window).height();
+    if($(window).height() < 420) {
+      height = 420;
+    }
+    $(".js-fullheight").css("height", height);
     $(window).resize(function () {
-      $(".js-fullheight").css("height", $(window).height());
+      $(".js-fullheight").css("height", height);
     });
   };
 
